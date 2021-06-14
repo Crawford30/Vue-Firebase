@@ -51,6 +51,7 @@
     <h1>HELLO</h1>
 
     <div id="app">
+      <!-- <p>{{ filtereddBooks }}</p> -->
       <!-- attribute binding -->
 
       <!-- <a v-bind:href="url"></a> -->
@@ -59,7 +60,7 @@
       <div v-if="showBooks">
         <ul>
           <li
-            v-for="book in books"
+            v-for="book in filtereddBooks"
             :class="{fav: book.isFav}"
             @click="toggleFav(book)"
           >
