@@ -10,11 +10,11 @@ const app = Vue.createApp({
       return{
 
         showBooks: true,
-        title: 'The Final Empire',
-        author: 'Joel Crawford',
-        age: 45,
-        x: 0,
-        y: 0
+       books: [
+           { title: 'The Final Empire', author: 'Joel Crawford' },
+           { title: 'The River Between', author: 'John Crawford' },
+           { title: 'Big Nerd Ranch', author: 'JJ Crawford' },
+       ]
 
       }
   },
