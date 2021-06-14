@@ -30,6 +30,10 @@ const app = Vue.createApp({
 
     },
 
+    toggleFav(book){
+        book.isFav = !book.isFav
+    },
+
     handleEvent(e, data){
         console.log(e, e.type)
         if(data){
