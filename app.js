@@ -12,9 +12,9 @@ const app = Vue.createApp({
 
         showBooks: true,
        books: [
-           { title: 'The Final Empire', author: 'Joel Crawford' , img: 'assets/1.jpg'},
-           { title: 'The River Between', author: 'John Crawford' , img: 'assets/2.jpg'},
-           { title: 'Big Nerd Ranch', author: 'JJ Crawford' , img: 'assets/3.jpg'},
+           { title: 'The Final Empire', author: 'Joel Crawford' , img: 'assets/1.jpg',isFav: true},
+           { title: 'The River Between', author: 'John Crawford' , img: 'assets/2.jpg', isFav: false},
+           { title: 'Big Nerd Ranch', author: 'JJ Crawford' , img: 'assets/3.jpg',isFav: true},
        ]
 
       }
