@@ -9,6 +9,7 @@ const app = Vue.createApp({
   data(){
       return{
 
+        showBooks: true,
         title: 'The Final Empire',
         author: 'Joel Crawford',
         age: 45
@@ -17,11 +18,15 @@ const app = Vue.createApp({
   },
   methods: {
       changeTitle(){
-
         this.title = "Change the book title"
         //   console.log("You clicked me!!")
 
-      }
+      },
+      toggleShowBooks(){
+        this.showBooks =  !this.showBooks
+
+    }
+
 
   }
 
