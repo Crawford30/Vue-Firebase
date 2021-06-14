@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Vue</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@3.0.2"></script>
+
+    <style>
+      .box {
+        padding: 100px 0px;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <h1>HELLO</h1>
@@ -15,19 +26,31 @@
         <p>{{ title }} - {{ author }} - {{ age }}</p>
       </div>
 
-      <button v-on:click="age++">Increase Age</button>
+      <!-- <button v-on:click="age++">Increase Age</button>
 
       <button v-on:click="age--">Decrease Age</button>
 
-      <div @click="changeTitle">Change Title</div>
+      <div @click="changeTitle">Change Title</div> -->
 
       <button @click="toggleShowBooks">
         <span v-if="showBooks">Hide Books</span>
         <!-- <span v-if="!showBooks">Show Books</span> -->
         <span v-else>Show Books</span>
       </button>
+
       <!-- https://youtu.be/F7PLPJqVotk?t=1810 -->
-      <div v-show="showBooks">Currently showing books</div>
+      <!-- <div v-show="showBooks">Currently showing books</div> -->
+
+      <br />
+      <!-- mouse events -->
+      <div class="box" @mouseover="handleEvent($event, 5)">
+        Mouse Over(Center)
+      </div>
+      <div class="box" @mouseleave="handleEvent">Mouse Leave</div>
+      <div class="box" @dblclick="handleEvent">Double Click</div>
+      <div class="box" @mousemove="handleMouseMove">
+        position - {{ x }} {{y}}
+      </div>
     </div>
 
     <script src="app.js"></script>
