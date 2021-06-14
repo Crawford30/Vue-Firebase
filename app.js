@@ -10,9 +10,19 @@ const app = Vue.createApp({
       return{
 
         title: 'The Final Empire',
-        author: 'Joel Crawford'
+        author: 'Joel Crawford',
+        age: 45
 
       }
+  },
+  methods: {
+      changeTitle(){
+
+        this.title = "Change the book title"
+        //   console.log("You clicked me!!")
+
+      }
+
   }
 
 });
